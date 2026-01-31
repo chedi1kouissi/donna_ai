@@ -1,0 +1,20 @@
+[
+    {
+        "product_id": "prod_overdraft_renewal",
+        "name": "Facilité de Caisse",
+        "status": "Active",
+        "amount_authorized": 50000.00,
+        "amount_utilized": 45200.00,
+        "start_date": "2025-02-01",
+        "end_date": "2026-01-31",
+        "next_review_date": "2026-02-15"
+    },
+    {
+        "product_id": "prod_leasing_equipment",
+        "name": "Crédit Bail - Machine Injection",
+        "status": "Active",
+        "original_amount": 120000.00,
+        "outstanding_balance": 80000.00,
+        "maturity_date": "2028-06-01"
+    }
+]

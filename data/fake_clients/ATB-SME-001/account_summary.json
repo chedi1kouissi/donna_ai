@@ -1,0 +1,26 @@
+{
+    "client_id": "ATB-SME-001",
+    "data_date": "2026-01-31",
+    "accounts": [
+        {
+            "account_number": "001-123456-001",
+            "type": "Checking (Compte Courant)",
+            "balance": -45200.00,
+            "currency": "TND",
+            "status": "Active"
+        },
+        {
+            "account_number": "001-123456-002",
+            "type": "Savings (Compte Épargne)",
+            "balance": 1200.50,
+            "currency": "TND",
+            "status": "Active"
+        }
+    ],
+    "aggregated_metrics": {
+        "total_inflow_mtd": 15000.00,
+        "total_outflow_mtd": 22000.00,
+        "avg_balance_3m": -30000.00,
+        "unpaid_checks_count": 0
+    }
+}

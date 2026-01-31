@@ -1,0 +1,14 @@
+[
+    {
+        "date": "2026-01-15",
+        "type": "Call",
+        "summary": "Client called about overdraft limit. Mentioned cash flow tension due to delayed payment from main customer.",
+        "outcome": "Promised to review profile."
+    },
+    {
+        "date": "2025-12-10",
+        "type": "Branch Visit",
+        "summary": "Deposited check. Asked about letter of credit fees.",
+        "outcome": "Provided fee schedule."
+    }
+]

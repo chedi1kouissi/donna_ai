@@ -1,0 +1,80 @@
+[
+    {
+        "id": "prod_overdraft_renewal",
+        "name": "Overdraft Renewal (Facilité de Caisse)",
+        "segment_fit": [
+            "SME",
+            "Corporate"
+        ],
+        "requirements": [
+            "Financial statements N-1",
+            "Cash flow forecast",
+            "Clean credit history"
+        ],
+        "benefits": [
+            "Flexible working capital",
+            "Automatic coverage of recurring expenses"
+        ],
+        "risks": [
+            "High interest if exceeded",
+            "Requires annual review"
+        ]
+    },
+    {
+        "id": "prod_working_capital_loan",
+        "name": "Working Capital Loan (Crédit de Gestion)",
+        "segment_fit": [
+            "SME"
+        ],
+        "requirements": [
+            "Confirmed order book",
+            "Profitable N-1"
+        ],
+        "benefits": [
+            "Finances stock/receivables",
+            "lower rate than overdraft"
+        ],
+        "risks": [
+            "Fixed repayment schedule",
+            "Collateral often required"
+        ]
+    },
+    {
+        "id": "prod_leasing_equipment",
+        "name": "Equipment Leasing (Crédit Bail)",
+        "segment_fit": [
+            "SME",
+            "Professional"
+        ],
+        "requirements": [
+            "Proforma invoice",
+            "20% self-financing"
+        ],
+        "benefits": [
+            "Tax advantages",
+            "Preserves cash flow"
+        ],
+        "risks": [
+            "Asset ownership transfer only at end"
+        ]
+    },
+    {
+        "id": "prod_export_prefinance",
+        "name": "Export Pre-financing",
+        "segment_fit": [
+            "Exporting SME"
+        ],
+        "requirements": [
+            "Domiciliation of export proceeds",
+            "LC or confirmed orders"
+        ],
+        "benefits": [
+            "Cash before shipment",
+            "Currency hedging optional"
+        ],
+        "risks": [
+            "Non-payment by foreign buyer",
+            "Currency fluctuation"
+        ]
+    }
+]

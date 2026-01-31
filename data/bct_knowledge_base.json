@@ -1,0 +1,46 @@
+[
+    {
+        "id": "cir_2024_01",
+        "title": "BCT Circular 2024-01: Export Finance Requirements",
+        "summary": "Mandates that all export pre-financing loans above 500k TND require a validated purchase order domiciled at the bank.",
+        "keywords": [
+            "export",
+            "pre-finance",
+            "loan",
+            "foreign currency"
+        ]
+    },
+    {
+        "id": "cir_2023_14",
+        "title": "BCT Circular 2023-14: SME Credit Guarantee Scheme",
+        "summary": "Loans for equipment acquisition by manufacturing SMEs are eligible for SOTUGAR guarantee up to 70%.",
+        "keywords": [
+            "sme",
+            "guarantee",
+            "equipment",
+            "investment"
+        ]
+    },
+    {
+        "id": "cir_2022_08",
+        "title": "BCT Circular 2022-08: Debt-to-Income Ratios",
+        "summary": "Corporate debt service coverage ratio (DSCR) must stay above 1.2x for new long-term facilities.",
+        "keywords": [
+            "dscr",
+            "ratio",
+            "risk",
+            "long-term"
+        ]
+    },
+    {
+        "id": "cir_2025_02",
+        "title": "BCT Circular 2025-02: Digital Onboarding Standards",
+        "summary": "Digital KYC is accepted for accounts with annual turnover < 200k TND. Higher tiers require physical interview.",
+        "keywords": [
+            "kyc",
+            "compliance",
+            "digital",
+            "onboarding"
+        ]
+    }
+]

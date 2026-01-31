@@ -1,0 +1,24 @@
+{
+    "client_id": "ATB-SME-001",
+    "name": "SOTUPLAST S.A.R.L",
+    "legal_form": "SARL",
+    "founding_date": "2015-06-12",
+    "activity_sector": "Plastics Manufacturing",
+    "segment": "SME (PME)",
+    "rm_name": "Sami Ben Ali",
+    "address": "Zone Industrielle Sidi Abdelhamid, Sousse",
+    "tax_id": "1234567M/A/M/000",
+    "kyc_status": "Review Required",
+    "stakeholders": [
+        {
+            "name": "Ahmed Tounsi",
+            "role": "Gérant",
+            "ownership": "60%"
+        },
+        {
+            "name": "Leila Tounsi",
+            "role": "Associé",
+            "ownership": "40%"
+        }
+    ]
+}

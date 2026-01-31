@@ -1,0 +1,6 @@
+flask
+flask-cors
+python-dotenv
+pydantic
+google-generativeai
+google-adk[a2a]

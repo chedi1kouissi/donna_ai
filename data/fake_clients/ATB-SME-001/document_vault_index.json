@@ -1,0 +1,29 @@
+{
+    "kyc_docs": [
+        {
+            "doc_name": "Statuts",
+            "status": "Valid",
+            "expiry": null
+        },
+        {
+            "doc_name": "CIN Gérant",
+            "status": "Valid",
+            "expiry": "2028-01-01"
+        },
+        {
+            "doc_name": "Registre de Commerce",
+            "status": "Expired",
+            "expiry": "2025-12-31"
+        }
+    ],
+    "financial_docs": [
+        {
+            "doc_name": "États Financiers 2024",
+            "status": "Valid"
+        },
+        {
+            "doc_name": "États Financiers 2025",
+            "status": "Missing"
+        }
+    ]
+}

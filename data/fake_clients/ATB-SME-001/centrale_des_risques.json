@@ -1,0 +1,28 @@
+{
+    "client_tax_id": "1234567M",
+    "data_date": "2026-01-30",
+    "total_commitment_market": 450000.000,
+    "worst_class": 0,
+    "unpaid_amount": 0.000,
+    "commitments_by_bank": [
+        {
+            "bank_code": "ATB",
+            "short_term": 50000.000,
+            "medium_term": 80000.000,
+            "class": 0
+        },
+        {
+            "bank_code": "BIAT",
+            "short_term": 20000.000,
+            "medium_term": 0.000,
+            "class": 0
+        },
+        {
+            "bank_code": "STB",
+            "short_term": 0.000,
+            "medium_term": 300000.000,
+            "class": 0
+        }
+    ],
+    "bct_notes": "Situation saine. Aucun incident de paiement signalé ces 12 derniers mois."
+}
