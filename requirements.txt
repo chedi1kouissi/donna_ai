@@ -1,6 +1,7 @@
 flask
 flask-cors
-python-dotenv
+google-generativeai
 pydantic
+python-telegram-bot
 google-generativeai
 google-adk[a2a]

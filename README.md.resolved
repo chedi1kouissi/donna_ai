@@ -1,0 +1,73 @@
+# ATB Relationship Copilot
+
+A multi-agent "AI Secretary" for a Tunisian corporate banker (Chargé de clientèle), built for the hackathon.
+
+## Features
+- **AI Agents**: Data Retriever, Client Brief, Risk/Compliance, Opportunity Matcher, Case Updater.
+- **Orchestration**: Logic to fan-out tasks to agents and aggregate results into a "Prep Pack".
+- **Structured Data**: Uses strict Pydantic schemas for reliable JSON outputs.
+- **A2A Protocol**: Includes a minimal Agent-to-Agent server implementation.
+
+## Setup
+
+1. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Configuration**
+   Copy [.env.example](file:///C:/Users/ASUS/.gemini/antigravity/brain/a300687e-2830-4fe6-b9f4-83a1cc67e959/.env.example) to `.env` and add your Gemini API Key:
+   ```bash
+   cp .env.example .env
+   # Edit .env and set GEMINI_API_KEY
+   ```
+
+## Running the Application
+
+### 1. Main API Server
+Starts the Flask server to handle Prep Pack generation and Case Updates.
+```bash
+python app.py
+```
+*   Server runs on `http://localhost:5000`
+
+### 2. A2A Server (Optional)
+Starts the minimal Agent-to-Agent protocol server.
+```bash
+python a2a_server.py
+```
+*   Server runs on `http://localhost:8000`
+
+## API Usage Examples
+
+### Generate Prep Pack (Before Meeting)
+```bash
+curl -X POST -H "Content-Type: application/json" \
+  -d '{"client_id": "ATB-SME-001"}' \
+  http://localhost:5000/prep-pack
+```
+*   Output: JSON response + Markdown report saved in `outputs/`
+
+### Update Case (After Meeting)
+```bash
+curl -X POST -H "Content-Type: application/json" \
+  -d '{
+    "client_id": "ATB-SME-001",
+    "meeting_date": "2026-02-01",
+    "meeting_type": "Review",
+    "banker_notes": [
+      "Client is worried about cash flow.",
+      "Needs to renew overdraft.",
+      "Interested in leasing for new machine."
+    ]
+  }' \
+  http://localhost:5000/after-meeting
+```
+*   Output: JSON response with updated case data and generated reminders.
+
+## Project Structure
+- [app.py](file:///C:/Users/ASUS/.gemini/antigravity/brain/a300687e-2830-4fe6-b9f4-83a1cc67e959/app.py): Main Flask API.
+- [agents.py](file:///C:/Users/ASUS/.gemini/antigravity/brain/a300687e-2830-4fe6-b9f4-83a1cc67e959/agents.py): Gemini-powered agent definitions.
+- [orchestrator.py](file:///C:/Users/ASUS/.gemini/antigravity/brain/a300687e-2830-4fe6-b9f4-83a1cc67e959/orchestrator.py): Business logic and workflow management.
+- [schemas.py](file:///C:/Users/ASUS/.gemini/antigravity/brain/a300687e-2830-4fe6-b9f4-83a1cc67e959/schemas.py): Pydantic data models.
+- [data/](file:///C:/Users/ASUS/.gemini/antigravity/brain/a300687e-2830-4fe6-b9f4-83a1cc67e959/tools.py#7-33): JSON fixtures and product catalog.
