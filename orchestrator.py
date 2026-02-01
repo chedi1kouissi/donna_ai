@@ -62,6 +62,58 @@ class Orchestrator:
             "report_path": filename
         }
 
+    def _update_interactions_log(self, client_id: str, meeting_date: str, meeting_type: str, summary: str):
+        """Appends the new meeting to the interactions log so next PrepPack sees it."""
+        log_path = os.path.join(Config.FAKE_DATA_PATH, client_id, "interactions_log.json")
+        if not os.path.exists(log_path):
+            return
+
+        try:
+            with open(log_path, "r", encoding="utf-8") as f:
+                logs = json.load(f)
+            
+            # Prepend new interaction
+            new_entry = {
+                "date": meeting_date,
+                "type": meeting_type,
+                "summary": summary[:300] + "..." if len(summary) > 300 else summary,
+                "outcome": "See Client Case for full minutes."
+            }
+            logs.insert(0, new_entry)
+            
+            with open(log_path, "w", encoding="utf-8") as f:
+                json.dump(logs, f, indent=2)
+        except Exception as e:
+            logger.error(f"Failed to update interactions log: {e}")
+
+    def _update_document_vault(self, client_id: str, minutes: str):
+        """Simple heuristic to update doc status if mentioned in minutes."""
+        vault_path = os.path.join(Config.FAKE_DATA_PATH, client_id, "document_vault_index.json")
+        if not os.path.exists(vault_path):
+            return
+
+        lower_minutes = minutes.lower()
+        if "reçu" not in lower_minutes and "received" not in lower_minutes:
+            return
+
+        try:
+            with open(vault_path, "r", encoding="utf-8") as f:
+                vault = json.load(f)
+
+            updated = False
+            # heuristic: check for financial statements
+            if "états financiers" in lower_minutes or "financial statements" in lower_minutes:
+                for doc in vault.get("financial_docs", []):
+                     if "2025" in doc.get("doc_name", ""):
+                        doc["status"] = "Valid (Received)"
+                        updated = True
+            
+            if updated:
+                 with open(vault_path, "w", encoding="utf-8") as f:
+                    json.dump(vault, f, indent=2)
+        except Exception as e:
+            logger.error(f"Failed to update doc vault: {e}")
+
     def update_case_after_meeting(self, client_id: str, input_data: dict):
         logger.info(f"Updating case for {client_id}")
         
@@ -99,14 +151,23 @@ class Orchestrator:
             existing_tasks.append(t)
         case_file["current_tasks"] = existing_tasks
         
+        
         # Save
         with open(case_path, "w", encoding="utf-8") as f:
             json.dump(case_file, f, indent=2, default=str)
+        
+        # 3. Close the loop: Update Interactions Log for next Prep Pack
+        self._update_interactions_log(
+            client_id, 
+            input_data.get("meeting_date"), 
+            input_data.get("meeting_type"), 
+            result_data["compte_rendu_officiel"]
+        )
+        
+        # 4. Document Radar: Update Vault if docs received
+        self._update_document_vault(client_id, result_data["compte_rendu_officiel"])
             
-        return {
-            "client_case": case_file,
-            "reminders": result_data["new_reminders"]
-        }
+        return result_data
 
     def _generate_markdown_report(self, pack: PrepPack, client_id: str) -> str:
         s = pack.snapshot

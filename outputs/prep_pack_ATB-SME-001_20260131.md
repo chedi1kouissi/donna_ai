@@ -3,43 +3,49 @@
 **Date:** 2026-01-31 | **Segment:** SME (PME)
 
 ## 1. Fiche de Visite (Executive Brief)
-**Objet:** Renouvellement de la Facilité de Caisse et revue globale de la relation client
+**Objet:** Renouvellement et régularisation du dossier client, discussion sur la situation de trésorerie et identification des besoins.
 
-SOTUPLAST S.A.R.L est une PME active dans la fabrication de plastiques. La société détient une facilité de caisse de 50 000 TND, actuellement utilisée à 45 200 TND, avec un solde débiteur de -45 200 TND sur le compte courant. La date de renouvellement de la facilité est le 15/02/2026. Un crédit bail pour une machine d'injection est également en cours. Le client a signalé des tensions de trésorerie dues à un retard de paiement d'un client majeur. Le statut KYC est 'Review Required' et plusieurs documents sont manquants ou expirés (Registre de Commerce, États Financiers 2025). La centrale des risques indique un engagement total de 450 000 TND sans incident de paiement récent.
+SOTUPLAST S.A.R.L est une PME active dans la fabrication de plastiques. Le client utilise une facilité de caisse de 50 000 TND, actuellement utilisée à 45 200 TND, avec un solde débiteur significatif sur le compte courant (-45 200 TND). La situation KYC nécessite une revue, et des documents clés (Registre de Commerce, États Financiers 2025) sont manquants ou expirés. Le client a récemment signalé des tensions de trésorerie dues à des retards de paiement de ses clients. La situation globale à la centrale des risques est saine, sans incident de paiement.
 
 **Chiffres Clés:**
-- **CA N:** À demander
-- **CA N-1:** À demander
-- **Engagement Total:** 450 000 TND
-- **Impayés:** 0 TND
+- **CA N:** À obtenir
+- **CA N-1:** À obtenir
+- **Engagement Total:** 450000.0 TND (Centrale des Risques)
+- **Impayés:** 0.0 TND
 
 ## 2. Risk & Compliance
 > [!WARNING]
 > Human Verification Required
 
 **Flags:**
-- [HIGH] Regulatory Compliance - KYC: Client's KYC status is 'Review Required'. The 'Registre de Commerce' (Commercial Register) expired on 2025-12-31, and 'États Financiers 2025' (2025 Financial Statements) are missing. This indicates a critical gap in client due diligence and compliance documentation. (Impact: Potential regulatory fines, inability to renew facilities, incomplete risk assessment, and non-compliance with BCT regulations and internal policies.)
-- [HIGH] Financial Risk - Liquidity & Credit: The current account balance is significantly negative (-45,200 TND), and the overdraft facility is highly utilized (45,200 TND out of 50,000 TND). Aggregated metrics show total outflows exceeding inflows MTD (22,000 TND vs. 15,000 TND) and a negative average balance over 3 months (-30,000 TND). The client has also reported cash flow tension due to delayed payments from a major customer. (Impact: Increased risk of default on the overdraft facility, potential for further account deterioration, and inability to meet short-term financial obligations. This situation raises concerns about the client's ability to service existing debt and warrants a thorough financial review.)
-- [MEDIUM] Operational Risk - Credit Renewal: The overdraft facility ('Facilité de Caisse') is due for renewal on 2026-02-15. However, critical KYC and financial documentation are missing or expired, and the client is experiencing significant cash flow difficulties, making a straightforward renewal problematic. (Impact: Delay in the renewal process, potential for facility suspension, increased administrative burden, and risk of non-compliance if renewed without proper due diligence and updated information.)
+- [HIGH] KYC Non-Compliance: Client's KYC status is 'Review Required'. The 'Registre de Commerce' is expired (31/12/2025), and 'États Financiers 2025' are missing. This indicates a lapse in regulatory compliance and incomplete client information. (Impact: Regulatory fines, inability to process transactions, potential for financial crime.)
+- [HIGH] Credit Risk - Liquidity/Cash Flow: The client's checking account has a significant debit balance (-45,200 TND), and the overdraft facility is highly utilized (45,200 TND out of 50,000 TND authorized). Monthly outflows exceed inflows, and the client has reported cash flow tensions due to delayed payments from customers. (Impact: Increased default risk on current facilities, potential for further financial distress, inability to meet short-term obligations.)
+- [MEDIUM] Operational Risk - Data Deficiency: The 'États Financiers 2025' are missing, which are crucial for assessing the client's current financial health and making informed credit decisions, especially for the overdraft renewal. (Impact: Inaccurate risk assessment, non-compliance with internal credit policies, potential for misinformed lending decisions.)
+- [LOW] Regulatory Compliance - Credit Ratios: While not directly applicable to the current overdraft renewal, any consideration for new long-term facilities would require ensuring the corporate Debt Service Coverage Ratio (DSCR) remains above 1.2x as per BCT Circular 2022-08. The current cash flow tensions raise concerns about future DSCR. (Impact: Non-compliance with BCT regulations for new long-term lending, potential for increased credit risk if not monitored.) (Ref: cir_2022_08)
 
 ## 3. Credit Committee Proposals
-### Overdraft Renewal and Increase (Facilité de Caisse) (70,000 TND)
-**Purpose:** To provide enhanced short-term working capital flexibility, cover temporary cash flow deficits resulting from delayed customer payments, and ensure continuity of operations without frequent account overruns.
-**Financial Logic:** SOTUPLAST S.A.R.L is currently utilizing 90.4% of its existing 50,000 TND overdraft, with the current account showing a debit balance of -45,200 TND and an average 3-month balance of -30,000 TND. The client has explicitly reported cash flow tension due to delayed payments from a major customer. An increase to 70,000 TND will provide a necessary buffer of 20,000 TND, allowing the company to manage its operational cycle more effectively, mitigate the impact of payment delays, and avoid incurring additional fees from exceeding the limit. The company has a healthy Centrale Risques profile with no recent payment incidents, indicating a generally sound financial standing despite temporary liquidity challenges.
-**Mitigation:** 1. Require updated financial statements for 2025 and a detailed cash flow forecast for the next 6-12 months, specifically addressing the recovery of delayed payments. 2. Ensure the renewal of the 'Registre de Commerce' and update KYC status. 3. Implement enhanced monitoring of the account's utilization and transaction patterns. 4. Request regular updates from the client regarding the status of major customer payments. 5. Consider a shorter review period (e.g., 6 months) if cash flow volatility persists.
+### Overdraft Renewal (Facilité de Caisse) (50,000 TND)
+**Purpose:** To provide flexible short-term liquidity for daily operational needs and cover temporary cash flow gaps.
+**Financial Logic:** The client currently utilizes 45,200 TND of their existing 50,000 TND overdraft, indicating a reliance on this facility for working capital. The average 3-month balance is -30,000 TND, and recent interactions confirm cash flow tension due to delayed customer payments. Renewing the facility at the current limit ensures continuity of operations and provides a safety net for unforeseen shortfalls.
+**Mitigation:** The client has a healthy Centrale Risques profile with no payment incidents. The renewal will be contingent on the submission of missing financial documents (États Financiers 2025) and an updated cash flow forecast. Close monitoring of account activity and utilization will be maintained by the Relationship Manager.
+
+### Working Capital Loan (Crédit de Gestion) (50,000 TND)
+**Purpose:** To strengthen the company's working capital structure, specifically to finance receivables impacted by delayed customer payments and reduce reliance on the overdraft for structural needs.
+**Financial Logic:** SOTUPLAST S.A.R.L is experiencing cash flow tension due to delayed payments from main customers, leading to high utilization of their overdraft facility and a significant negative checking account balance. A 50,000 TND Working Capital Loan will provide a more stable and cost-effective solution to finance receivables, freeing up the overdraft for true short-term fluctuations. This will improve the company's liquidity position and reduce the risk of exceeding the overdraft limit. Based on the cheat sheet, a 50,000 TND loan at 11% for 48 months would have monthly payments of approximately 1,292.28 TND, which should be manageable given the company's overall healthy Centrale Risques profile and assuming improved cash flow from customer payments.
+**Mitigation:** The loan will be contingent on the submission of a confirmed order book, updated financial statements (États Financiers 2025), and a detailed cash flow forecast. Collateral (e.g., pledge on receivables) may be required. The healthy Centrale Risques profile and absence of payment incidents provide comfort. Regular review of financial performance and customer payment trends will be conducted.
 
 
 ## 4. Meeting Agenda & Questions
-- Présentation de l'objet de la visite : Renouvellement de la facilité de caisse et revue de la relation.
-- Discussion sur la situation financière actuelle de l'entreprise et les tensions de trésorerie.
-- Collecte des documents manquants/expirés (Registre de Commerce, États Financiers 2025).
-- Présentation des conditions de renouvellement de la facilité de caisse.
-- Identification des besoins futurs et opportunités commerciales.
+- Présentation de l'objet de la visite et remerciements.
+- Discussion sur la situation de trésorerie actuelle et les causes des tensions.
+- Collecte des documents manquants (Registre de Commerce à jour, États Financiers 2025).
+- Revue du dossier client et discussion sur le renouvellement de la facilité de caisse.
+- Identification des besoins futurs et proposition de solutions bancaires adaptées.
 - Définition des prochaines étapes.
 
 **Questions Découverte:**
-- Comment se porte l'activité de SOTUPLAST S.A.R.L en ce début d'année 2026 ?
-- Pourriez-vous nous en dire plus sur les retards de paiement de votre client majeur et leur impact sur votre trésorerie ?
-- Quels sont vos projets de développement ou d'investissement pour l'année à venir ?
-- Rencontrez-vous des défis particuliers dans votre secteur d'activité ou avec vos fournisseurs/clients ?
-- Y a-t-il d'autres besoins bancaires (financement, services de paiement, international) que nous pourrions explorer ensemble ?
+- Pourriez-vous nous en dire plus sur les retards de paiement de vos principaux clients et leur impact sur votre trésorerie ?
+- Quelles sont vos perspectives pour l'année 2026 en termes d'activité et d'investissements ?
+- Rencontrez-vous d'autres défis opérationnels ou financiers que la banque pourrait vous aider à surmonter ?
+- Envisagez-vous des projets de développement nécessitant de nouveaux financements (acquisition d'équipements, expansion) ?
+- Comment la banque pourrait-elle mieux vous accompagner dans la gestion de votre cycle d'exploitation ?

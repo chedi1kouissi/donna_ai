@@ -1,6 +1,45 @@
 {
-    "client_id": "ATB-SME-001",
-    "case_history": [],
-    "current_tasks": [],
-    "pending_reminders": []
+  "client_id": "ATB-SME-001",
+  "case_history": [
+    {
+      "date": "2026-02-01",
+      "type": "Visite",
+      "minutes": "Compte-rendu de visite - Client ATB-SME-001\nDate de la visite: 2026-02-01\nClient: M. Ahmed Tounsi\nObjet: Suivi et validation de la demande de financement pour l'acquisition d'une machine de moulage par injection.\n\nD\u00e9roulement de la visite:\n- Rencontre avec M. Ahmed Tounsi \u00e0 l'usine.\n- Validation de l'achat de la nouvelle machine de moulage par injection, d'un montant de 80 000 TND.\n- Le client accepte la proposition de financement sur 48 mois, mais sollicite une r\u00e9vision du taux d'int\u00e9r\u00eat propos\u00e9, suite \u00e0 une offre concurrente \u00e0 10.5%.\n- Il est \u00e0 noter que l'\"Attestation de D\u00e9p\u00f4t\" est toujours manquante au dossier.\n- M. Tounsi s'est engag\u00e9 \u00e0 transmettre le budget pr\u00e9visionnel 2025 d'ici lundi prochain (09/02/2026).\n- Il a \u00e9t\u00e9 convenu de pr\u00e9senter le dossier au Comit\u00e9 de Cr\u00e9dit mardi prochain (10/02/2026).\n\nActions \u00e0 mener:\n- R\u00e9cup\u00e9rer l'Attestation de D\u00e9p\u00f4t.\n- Suivre la r\u00e9ception du budget pr\u00e9visionnel 2025.\n- R\u00e9viser la proposition de taux.\n- Pr\u00e9parer et pr\u00e9senter le dossier au Comit\u00e9 de Cr\u00e9dit.",
+      "draft_email": {
+        "subject": "Compte-rendu de notre rencontre et prochaines \u00e9tapes - Votre demande de financement ATB-SME-001",
+        "body": "Cher Monsieur Tounsi,\n\nNous vous remercions pour votre accueil lors de notre visite \u00e0 votre usine le 1er f\u00e9vrier 2026.\n\nNous confirmons la validation de l'achat de votre nouvelle machine de moulage par injection (80 000 TND) et votre accord sur la dur\u00e9e de financement de 48 mois. Nous avons bien pris note de votre demande de r\u00e9vision du taux d'int\u00e9r\u00eat et allons \u00e9tudier cette possibilit\u00e9 en interne.\n\nPour finaliser votre dossier, nous attendons toujours l'\"Attestation de D\u00e9p\u00f4t\". Nous vous serions reconnaissants de bien vouloir nous la faire parvenir dans les meilleurs d\u00e9lais. Nous attendons \u00e9galement la r\u00e9ception de votre budget pr\u00e9visionnel 2025, comme convenu, d'ici lundi prochain, le 9 f\u00e9vrier.\n\nVotre dossier sera pr\u00e9sent\u00e9 au Comit\u00e9 de Cr\u00e9dit mardi prochain, le 10 f\u00e9vrier. Nous ne manquerons pas de vous tenir inform\u00e9 de la suite donn\u00e9e \u00e0 votre demande.\n\nRestant \u00e0 votre enti\u00e8re disposition pour toute information compl\u00e9mentaire.\n\nCordialement,\n[Votre Nom/Banque]"
+      }
+    }
+  ],
+  "current_tasks": [
+    {
+      "id": "task_6184",
+      "description": "R\u00e9cup\u00e9rer l'Attestation de D\u00e9p\u00f4t manquante pour le dossier client ATB-SME-001.",
+      "status": "pending",
+      "due_date": null,
+      "priority": "high"
+    },
+    {
+      "id": "task_7907",
+      "description": "Suivi de la r\u00e9ception du budget pr\u00e9visionnel 2025 du client ATB-SME-001.",
+      "status": "pending",
+      "due_date": "2026-02-09",
+      "priority": "medium"
+    },
+    {
+      "id": "task_4345",
+      "description": "Pr\u00e9parer et pr\u00e9senter le dossier de financement ATB-SME-001 au Comit\u00e9 de Cr\u00e9dit.",
+      "status": "pending",
+      "due_date": "2026-02-10",
+      "priority": "high"
+    },
+    {
+      "id": "task_2086",
+      "description": "R\u00e9viser la proposition de taux d'int\u00e9r\u00eat pour le financement de la machine du client ATB-SME-001.",
+      "status": "pending",
+      "due_date": "2026-02-09",
+      "priority": "high"
+    }
+  ],
+  "pending_reminders": []
 }
